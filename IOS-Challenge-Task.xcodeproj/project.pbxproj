@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		516613D51CC1768900C91173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516613D41CC1768900C91173 /* AppDelegate.swift */; };
 		516613DA1CC1768900C91173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516613D81CC1768900C91173 /* Main.storyboard */; };
-		516613DC1CC1768900C91173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 516613DB1CC1768900C91173 /* Assets.xcassets */; };
 		516613DF1CC1768900C91173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516613DD1CC1768900C91173 /* LaunchScreen.storyboard */; };
 		516613E71CC1773900C91173 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516613E61CC1773900C91173 /* Stack.swift */; };
 		516613EA1CC179E100C91173 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 516613E81CC179E100C91173 /* Model.xcdatamodeld */; };
@@ -18,13 +17,13 @@
 		516613F31CC17BDC00C91173 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516613F21CC17BDC00C91173 /* TaskController.swift */; };
 		516613F51CC17BF300C91173 /* TaskListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516613F41CC17BF300C91173 /* TaskListTableViewController.swift */; };
 		516613F71CC17BFF00C91173 /* TaskDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516613F61CC17BFF00C91173 /* TaskDetailTableViewController.swift */; };
+		516613FA1CC181A900C91173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 516613F91CC181A900C91173 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		516613D11CC1768900C91173 /* IOS-Challenge-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Challenge-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		516613D41CC1768900C91173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		516613D91CC1768900C91173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		516613DB1CC1768900C91173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		516613DE1CC1768900C91173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		516613E01CC1768900C91173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		516613E61CC1773900C91173 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -34,6 +33,7 @@
 		516613F21CC17BDC00C91173 /* TaskController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskController.swift; path = ../TaskController.swift; sourceTree = "<group>"; };
 		516613F41CC17BF300C91173 /* TaskListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskListTableViewController.swift; path = ../TaskListTableViewController.swift; sourceTree = "<group>"; };
 		516613F61CC17BFF00C91173 /* TaskDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskDetailTableViewController.swift; path = ../TaskDetailTableViewController.swift; sourceTree = "<group>"; };
+		516613F91CC181A900C91173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +72,9 @@
 				516613F01CC17BA700C91173 /* Model */,
 				516613F11CC17BBD00C91173 /* Controller */,
 				516613F81CC17C1200C91173 /* View */,
-				516613DB1CC1768900C91173 /* Assets.xcassets */,
 				516613DD1CC1768900C91173 /* LaunchScreen.storyboard */,
 				516613E01CC1768900C91173 /* Info.plist */,
+				516613F91CC181A900C91173 /* Assets.xcassets */,
 			);
 			path = "IOS-Challenge-Task";
 			sourceTree = "<group>";
@@ -82,9 +82,9 @@
 		516613EF1CC17B9B00C91173 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				516613EB1CC17A2500C91173 /* Task+CoreDataProperties.swift */,
 				516613E81CC179E100C91173 /* Model.xcdatamodeld */,
 				516613E61CC1773900C91173 /* Stack.swift */,
+				516613EB1CC17A2500C91173 /* Task+CoreDataProperties.swift */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -173,7 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				516613DF1CC1768900C91173 /* LaunchScreen.storyboard in Resources */,
-				516613DC1CC1768900C91173 /* Assets.xcassets in Resources */,
+				516613FA1CC181A900C91173 /* Assets.xcassets in Resources */,
 				516613DA1CC1768900C91173 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
