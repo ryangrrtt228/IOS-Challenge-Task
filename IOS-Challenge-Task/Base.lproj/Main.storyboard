@@ -47,6 +47,9 @@
                                         <constraint firstAttribute="bottom" secondItem="Xad-cb-zWo" secondAttribute="bottom" id="twi-wJ-MZe"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="lp0-Tt-ZtP" kind="show" id="uJe-Iz-oOP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -176,9 +179,24 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="New Task" id="aPy-FO-4kz">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="1ue-EZ-Mit"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SsJ-IM-1IL"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="1ue-EZ-Mit">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="lp0-Tt-ZtP" id="amm-SE-vXh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="SsJ-IM-1IL">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="lp0-Tt-ZtP" id="F3D-sc-VAo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="datePicker" destination="P8C-B2-N0F" id="3fK-SM-UJG"/>
+                        <outlet property="dueDateTextField" destination="IOz-0N-0zA" id="23O-78-vmv"/>
+                        <outlet property="nameTaskTextField" destination="npV-Gu-D6V" id="ly2-Yu-qY2"/>
+                        <outlet property="notesTextField" destination="fVJ-3A-Quf" id="CuX-1L-FRd"/>
+                        <outlet property="saveTaskButton" destination="SsJ-IM-1IL" id="nQU-z9-0QI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WdM-HH-Yeu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="P8C-B2-N0F">
@@ -213,4 +231,7 @@
     <resources>
         <image name="incomplete" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uJe-Iz-oOP"/>
+    </inferredMetricsTieBreakers>
 </document>

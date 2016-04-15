@@ -10,28 +10,37 @@ import UIKit
 
 class TaskDetailTableViewController: UITableViewController {
     
+    var task: Task?
     
     
-    
-    
-    
-    
+    @IBOutlet weak var nameTaskTextField: UITextField!
+    @IBOutlet weak var dueDateTextField: UITextField!
+    @IBOutlet weak var notesTextField: UITextView!
+    @IBOutlet weak var saveTaskButton: UIBarButtonItem!
+    @IBOutlet var datePicker: UIDatePicker!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+         dueDateTextField.inputView = datePicker
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func saveButtonTapped(sender: AnyObject) {
+       
+        
+    }
+    
+    @IBAction func cancelButtonPressed(sender: AnyObject) {
+        
+    }
+    
 
     // MARK: - Table view data source
 
@@ -42,6 +51,16 @@ class TaskDetailTableViewController: UITableViewController {
         return 0
     }
 
+        func updateTask() {
+            
+            let name = nameTaskTextField.text!
+            let due = datePicker
+            let notes = notesTextField.text
+            
+        }
+
+    
+    
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)

@@ -18,6 +18,7 @@
 		516613F51CC17BF300C91173 /* TaskListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516613F41CC17BF300C91173 /* TaskListTableViewController.swift */; };
 		516613F71CC17BFF00C91173 /* TaskDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516613F61CC17BFF00C91173 /* TaskDetailTableViewController.swift */; };
 		516613FA1CC181A900C91173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 516613F91CC181A900C91173 /* Assets.xcassets */; };
+		516613FC1CC1944600C91173 /* DateHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516613FB1CC1944600C91173 /* DateHelp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		516613F41CC17BF300C91173 /* TaskListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskListTableViewController.swift; path = ../TaskListTableViewController.swift; sourceTree = "<group>"; };
 		516613F61CC17BFF00C91173 /* TaskDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskDetailTableViewController.swift; path = ../TaskDetailTableViewController.swift; sourceTree = "<group>"; };
 		516613F91CC181A900C91173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		516613FB1CC1944600C91173 /* DateHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				516613EC1CC17A2500C91173 /* Task.swift */,
+				516613FB1CC1944600C91173 /* DateHelp.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				516613D51CC1768900C91173 /* AppDelegate.swift in Sources */,
 				516613EE1CC17A2500C91173 /* Task.swift in Sources */,
 				516613F71CC17BFF00C91173 /* TaskDetailTableViewController.swift in Sources */,
+				516613FC1CC1944600C91173 /* DateHelp.swift in Sources */,
 				516613ED1CC17A2500C91173 /* Task+CoreDataProperties.swift in Sources */,
 				516613F31CC17BDC00C91173 /* TaskController.swift in Sources */,
 				516613F51CC17BF300C91173 /* TaskListTableViewController.swift in Sources */,
