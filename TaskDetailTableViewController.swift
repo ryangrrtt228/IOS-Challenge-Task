@@ -11,7 +11,10 @@ import UIKit
 class TaskDetailTableViewController: UITableViewController {
     
     var task: Task?
-    
+    var tasks: [Task] {
+        guard let task = task else {return []}
+        
+    }
     
     @IBOutlet weak var nameTaskTextField: UITextField!
     @IBOutlet weak var dueDateTextField: UITextField!
@@ -24,7 +27,6 @@ class TaskDetailTableViewController: UITableViewController {
         super.viewDidLoad()
         
          dueDateTextField.inputView = datePicker
-        
         
     }
 
